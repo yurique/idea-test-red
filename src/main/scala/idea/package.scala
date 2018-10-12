@@ -26,4 +26,10 @@ package object idea {
 
   val test2 = Test2()
 
+  def testFn1(id: Test1.Id = newId()): Unit = { }
+  def testFn2(id: Test1.Id = newId[Test1]()): Unit = { }
+
+  testFn1()
+  testFn2()
+
 }
